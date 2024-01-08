@@ -1,0 +1,20 @@
+<template>
+    <template if:true={isLoad}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+    <template if:false={isLoad}>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-2">
+                <c-account-contact-tree
+                        converted-account-contact={convertedAccCont}
+                        ongetidelement={handleSelectedId}
+                ></c-account-contact-tree>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <c-account-contact-tree-info
+                    selected-id={selectedId}
+                ></c-account-contact-tree-info>
+            </div>
+        </div>
+    </template>
+</template>

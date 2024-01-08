@@ -1,0 +1,42 @@
+<template>
+    <lightning-card  title={labels.summary}>
+        <div class="slds-p-horizontal_medium">
+            <template if:true={showSelectText}>
+                <p>{labels.selectContact}</p>
+            </template>
+            <template if:true={hasError}>
+                <p>{labels.errorText}</p>
+            </template>
+            <template if:true={selectedId}>
+                <template if:true={accountInfo}>
+                    <lightning-tile label={labels.accountInfo} href={accountLink}>
+                        <dl class="slds-dl_horizontal">
+                            <template for:each={accountInfo} for:item="field">
+                                <dt class="slds-dl_horizontal__label" key={field.id}>
+                                    <p class="slds-truncate" title={field.label}>{field.label}</p>
+                                </dt>
+                                <dd class="slds-dl_horizontal__detail slds-tile__meta" key={field.id}>
+                                    <p class="slds-truncate" title={field.value}>{field.value}</p>
+                                </dd>
+                            </template>
+                        </dl>
+                    </lightning-tile>
+                </template>
+                <template if:true={contactInfo}>
+                    <lightning-tile label={labels.contactInfo} href={contactLink}>
+                        <dl class="slds-dl_horizontal">
+                            <template for:each={contactInfo} for:item="field">
+                                <dt class="slds-dl_horizontal__label" key={field.id}>
+                                    <p class="slds-truncate" title={field.label}>{field.label}</p>
+                                </dt>
+                                <dd class="slds-dl_horizontal__detail slds-tile__meta" key={field.id}>
+                                    <p class="slds-truncate" title={field.value}>{field.value}</p>
+                                </dd>
+                            </template>
+                        </dl>
+                    </lightning-tile>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

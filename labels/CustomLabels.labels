@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AccContTree_Account_Info</fullName>
+        <categories>AccContTree</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccContTree_Account_Info</shortDescription>
+        <value>Account Info</value>
+    </labels>
+    <labels>
+        <fullName>AccContTree_Account_Not_Found</fullName>
+        <categories>AccContTree</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccContTree_Account_Not_Found</shortDescription>
+        <value>We don&apos;t find available accounts, make sure you have one.</value>
+    </labels>
+    <labels>
+        <fullName>AccContTree_Available_Accounts</fullName>
+        <categories>AccContTree</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccContTree_Available_Accounts</shortDescription>
+        <value>Available Accounts</value>
+    </labels>
+    <labels>
+        <fullName>AccContTree_Contact_Info</fullName>
+        <categories>AccContTree</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccContTree_Contact_Info</shortDescription>
+        <value>Contact Info</value>
+    </labels>
+    <labels>
+        <fullName>AccContTree_Error_Message</fullName>
+        <categories>AccContTree</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccContTree_Error_Message</shortDescription>
+        <value>Something went wrong when we tried to retrieve your Account or Contact info.
+Please contact your system administrator.</value>
+    </labels>
+    <labels>
+        <fullName>AccContTree_Select_Contact</fullName>
+        <categories>AccContTree</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccContTree_Select_Contact</shortDescription>
+        <value>Please select Account or Contact from &quot;Available Accounts&quot; card.</value>
+    </labels>
+    <labels>
+        <fullName>AccContTree_Summary</fullName>
+        <categories>AccContTree</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccContTree_Summary</shortDescription>
+        <value>Summary</value>
+    </labels>
+</CustomLabels>

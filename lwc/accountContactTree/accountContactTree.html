@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title={labels.availableAccount}>
+        <div class="slds-p-horizontal_medium">
+            <template if:true={convertedAccountContact}>
+                <lightning-tree items={convertedAccountContact} onselect={handleOnselect} ></lightning-tree>
+            </template>
+            <template if:false={convertedAccountContact}>
+                <p>{labels.accountsNotFound}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
